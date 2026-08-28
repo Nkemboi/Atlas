@@ -42,9 +42,11 @@
       }
     }, 1000);
 
-    // Mute / unmute via YouTube postMessage API
+    // Mute / unmute via YouTube postMessage API.
+    // The embed autoplays muted (autoplay=1&mute=1) so the browser never blocks it —
+    // the toggle below unmutes on first click.
     if (muteBtn && iframe) {
-      var isMuted = false;
+      var isMuted = true;
       function sendYT(func, args) {
         try {
           iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', func: func, args: args || [] }), '*');

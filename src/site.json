@@ -13,13 +13,14 @@
   "instagramUrl": "https://www.instagram.com/atlasautoservicecentre?igsh=d3gzMjNuNHJydnVx",
   "instagramHandle": "atlasautoservicecentre",
   "mapsUrl": "https://maps.app.goo.gl/3VVAVvx3FgYUzrfz8",
-  "introVideoEmbed": "https://www.youtube-nocookie.com/embed/eX8DE-_GJDM?autoplay=1&loop=1&playlist=eX8DE-_GJDM&start=4&controls=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1",
+  "introVideoEmbed": "https://www.youtube-nocookie.com/embed/eX8DE-_GJDM?autoplay=1&mute=1&loop=1&playlist=eX8DE-_GJDM&start=4&controls=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1",
   "osmEmbed": "https://www.openstreetmap.org/export/embed.html?bbox=36.8700%2C-1.2350%2C36.8950%2C-1.2150&amp;layer=mapnik&amp;marker=-1.2250%2C36.8825",
   "nav": [
     { "key": "services", "label": "Services", "href": "services.html" },
     { "key": "bays", "label": "Service Bays", "submenu": true },
     { "key": "workshop", "label": "The Workshop", "href": "workshop.html" },
     { "key": "why", "label": "Why Atlas", "href": "why-atlas.html" },
+    { "key": "about", "label": "About", "href": "about.html" },
     { "key": "location", "label": "Location", "href": "location.html" },
     { "key": "contact", "label": "Contact", "href": "contact.html" }
   ],

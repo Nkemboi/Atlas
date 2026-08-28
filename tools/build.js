@@ -51,6 +51,7 @@ const baseTokens = {
   INSTAGRAM_HANDLE: site.instagramHandle,
   MAPS_URL: site.mapsUrl,
   OSM_EMBED: site.osmEmbed,
+  INTRO_VIDEO: site.introVideoEmbed,
   COPYRIGHT: site.copyright,
   HOURS_LINES: site.hours.map((h) => '          <li>' + h.days + ': ' + h.time + '</li>').join('\n')
 };
@@ -99,8 +100,9 @@ const FOOTER_SERVICES = [
 const FOOTER_COMPANY = [
   ['why-atlas.html', 'Why Atlas'],
   ['workshop.html', 'The Workshop'],
+  ['about.html', 'About'],
   ['location.html', 'Location'],
-  ['#', 'Careers'],
+  ['about.html#careers', 'Careers'],
   ['#', 'Community']
 ];
 
@@ -290,6 +292,22 @@ renderPage({
   main: whyMain
 });
 
+/* ---------- about ---------- */
+const aboutMain = replaceTokens(pageBody('about'), {
+  CTA_BAND: ctaBand(
+    'Come and see the bays for yourself.',
+    'Walk in on Thika Road, Exit 7 — opposite Garden City. The same desk answers for the customer and the candidate.'
+  )
+});
+renderPage({
+  file: 'about.html',
+  title: 'About Us — Team & Careers | Atlas Auto Service Centre',
+  description:
+    'Atlas Auto Service Centre: Isuzu East Africa authorised service outlet on Thika Road since 2020. Meet the team behind the bays and see the open roles — technicians, service advisor, detailing, apprentices.',
+  navKey: 'about',
+  main: aboutMain
+});
+
 /* ---------- location ---------- */
 const locationMain = replaceTokens(pageBody('location'), {
   AREA_CHIPS: site.areasServed.map((a) => '          <span class="chip">' + a + '</span>').join('\n'),
@@ -315,4 +333,4 @@ renderPage({
   main: contactMain
 });
 
-console.log('done:', 1 + 1 + services.length + 4, 'pages');
+console.log('done:', 1 + 1 + services.length + 5, 'pages');

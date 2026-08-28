@@ -49,6 +49,7 @@ original inline `<style>`/`<script>` (verified at extraction time).
 | `service-<slug>.html` (×9)           | CPT **service** posts, template `single-service.php` | Submenu "Service Bays" (first 8, `inNav:true` in services.json) |
 | `workshop.html`                      | Page "The Workshop"                         | Primary |
 | `why-atlas.html`                     | Page "Why Atlas"                            | Primary |
+| `about.html`                         | Page "About Us" (company intro, team, careers) | Primary |
 | `location.html`                      | Page "Location"                             | Primary |
 | `contact.html`                       | Page "Contact"                              | Primary |
 
