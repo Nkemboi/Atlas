@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Atlas Auto Service Centre — Opposite Garden City</title>
-<meta name="description" content="Isuzu-authorized vehicle service on Thika Road, Exit 7 — opposite Garden City Mall, Nairobi. Nine bays for personal and fleet vehicles.">
+<title>Services — Nine Bays, One Standard | Atlas Auto Service Centre</title>
+<meta name="description" content="Mechanical & diagnostics, genuine parts, fleet support, recovery, alignment, body & paint, detailing, tracking & governors, electrical & A/C — all at Thika Road, Exit 7.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/01-base.css">
@@ -26,59 +26,6 @@
 </head>
 <body class="">
 
-<!-- ========== INTRO VIDEO MODAL ========== -->
-<div id="video-modal" class="video-modal">
-  <div class="video-modal-content">
-
-    <div class="intro-brand-lockup">
-      <div class="intro-atlas-logo"><img src="assets/images/atlas-logo-intro.png" alt="Atlas Auto Service Centre"></div>
-      <div class="intro-lockup-divider"></div>
-      <div class="intro-isuzu-block">
-        <div class="intro-isuzu-chip"><img src="assets/images/isuzu-logo-intro.png" alt="Isuzu"></div>
-        <span class="intro-authorised-label">AUTHORISED PARTNER</span>
-      </div>
-    </div>
-
-    <div class="video-frame">
-      <iframe
-        id="intro-video"
-        src="https://www.youtube-nocookie.com/embed/eX8DE-_GJDM?autoplay=1&loop=1&playlist=eX8DE-_GJDM&start=4&controls=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
-        title="Atlas Intro Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
-
-      <button id="mute-btn" class="mute-btn is-unmuted" type="button" aria-label="Mute video" aria-pressed="true">
-        <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-          <line x1="23" y1="9" x2="17" y2="15"/>
-          <line x1="17" y1="9" x2="23" y2="15"/>
-        </svg>
-        <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-        </svg>
-      </button>
-
-      <div class="intro-progress-track">
-        <div id="intro-progress-fill" class="intro-progress-fill"></div>
-      </div>
-    </div>
-
-    <button id="proceed-btn" class="proceed-btn" type="button" disabled>
-      <span id="proceed-label">Skip in 10s</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M5 12h14"/>
-        <path d="m12 5 7 7-7 7"/>
-      </svg>
-    </button>
-
-  </div>
-</div>
-
 
 <div class="top-chrome">
   <div class="brand-lockup">
@@ -96,148 +43,99 @@
 </div>
 
 
-<section class="hero" id="top">
-  <div class="hero-media">
-    <div class="hero-slide active" style="background-image:url('assets/images/hero-slide-1.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/hero-slide-2.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/hero-slide-3.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/hero-slide-4.jpg')"></div>
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Isuzu Authorized · Nairobi</div>
-    <h1 class="font-display">One address for<br>the car you drive<br>and the fleet you <em>sign for</em></h1>
-    <p class="hero-sub">You expect standards on the fairway and in the boardroom. Atlas brings the same quiet competence to your vehicle — personal or company — without the city-centre detour.</p>
-    <button type="button" class="hero-usp" id="openMapBtn" aria-label="View location on map">
-      <svg class="pin-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-        <circle cx="12" cy="10" r="2.5" fill="currentColor"/>
-      </svg>
-      <span class="usp-label">Thika Rd, opposite Garden City</span>
-      
-    </button>
-    <div class="hero-cta-row">
-      <button class="btn-explore" id="exploreBtn" type="button" aria-label="Open menu">
-        Explore
-                <svg class="road-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M3 19c2.5-3.5 4-6 5.5-8.5C10 8 11 6.5 13 6.5s2.5 1.2 4 3.5C18.5 12 20 15 21 19" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M8 19c1.5-2.8 2.4-4.6 3.3-6.2.9-1.6 1.5-2.8 2.7-2.8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" opacity="0.5"/>
-          <circle cx="13" cy="6.5" r="1.4" fill="currentColor"/>
-        </svg>
-      </button>
-      <a href="tel:+254700941698" class="btn-ghost btn-call">
-        <svg class="call-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Speak to the desk
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<section class="section services" id="services">
+<header class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('assets/images/hero-slide-4.jpg')"></div>
   <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span>
+      <span class="current">Services</span>
+    </nav>
     <div class="eyebrow">Capabilities</div>
-    <h2 class="section-title font-display reveal">Nine bays. One standard.</h2>
-    <p class="section-lead reveal">Whether it is the family SUV after a weekend up-country or a company Isuzu that must be back on the road Monday morning — the same process, the same accountability.</p>
+    <h1 class="font-display">Nine bays. One standard.</h1>
+    <p class="page-lead">Whether it is the family SUV after a weekend up-country or a company Isuzu that must be back on the road Monday morning — the same process, the same accountability.</p>
+  </div>
+</header>
 
-    <div class="services-select-wrap reveal">
-      <label for="servicesSelect">Jump to a service</label>
-      <select id="servicesSelect" class="services-select" aria-label="Select a service bay">
-        <option value="">All capabilities</option>
-        <option value="bay-mechanical">01 — Diagnostics & Mechanical</option>
-        <option value="bay-parts">02 — Genuine Parts</option>
-        <option value="bay-fleet">03 — Fleet Support</option>
-        <option value="bay-recovery">04 — Recovery</option>
-        <option value="bay-alignment">05 — Alignment & Balancing</option>
-        <option value="bay-bodywork">06 — Body & Paint</option>
-        <option value="bay-detail">07 — Wash & Upholstery</option>
-        <option value="bay-tracking">08 — Tracking & Governors</option>
-        <option value="bay-more">09 — Electrical & A/C</option>
-      </select>
+<section class="section">
+  <div class="wrap">
+    <div class="left-head">
+      <div class="eyebrow">Service bays</div>
+      <h2 class="section-title font-display">Pick the bay, meet the standard.</h2>
+      <p class="section-lead">Every bay below opens onto what it covers, how it runs, and how to book it.</p>
     </div>
-
-    <div class="bay-grid" id="bayGrid">
-      <div class="bay large img reveal" id="bay-mechanical" data-bay="0" style="background-image:url('assets/images/hero-slide-1.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18 28l4-4 3 3 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 11l2.2 4.8L37 18l-4.8 2.2L30 25l-2.2-4.8L23 18l4.8-2.2L30 11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 34h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".35"/></svg></div>
+    <div class="bay-grid">
+      <a class="bay large img reveal" href="service-mechanical-diagnostics.html" style="background-image:url('assets/images/hero-slide-1.jpg')">
         <span class="bay-num">01 / MECHANICAL</span>
         <div>
           <div class="bay-title">Diagnostics & Mechanical</div>
           <div class="bay-desc">Full computer diagnosis for passenger and commercial vehicles. No guesswork.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay orange reveal img" id="bay-parts" data-bay="1" style="background-image:url('assets/images/bay-parts.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2.2"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/><path d="M24 8v4M24 36v4M8 24h4M36 24h4M12.5 12.5l2.8 2.8M32.7 32.7l2.8 2.8M12.5 35.5l2.8-2.8M32.7 15.3l2.8-2.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      </a>
+      <a class="bay orange img reveal" href="service-genuine-parts.html" style="background-image:url('assets/images/bay-parts.jpg')">
         <span class="bay-num">02 / PARTS</span>
         <div>
           <div class="bay-title">Genuine Parts</div>
           <div class="bay-desc">Original equipment for Isuzu and multi-brand fleets.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay steel reveal img" id="bay-fleet" data-bay="2" style="background-image:url('assets/images/bay-fleet.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="8" y="18" width="22" height="14" rx="2" stroke="currentColor" stroke-width="2.2"/><path d="M30 24h6l4 5v3h-4" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="14" cy="34" r="3" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="34" r="3" stroke="currentColor" stroke-width="2"/><path d="M12 18v-3h10v3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="bay steel img reveal" href="service-fleet-management.html" style="background-image:url('assets/images/bay-fleet.jpg')">
         <span class="bay-num">03 / FLEET</span>
         <div>
           <div class="bay-title">Fleet Support</div>
           <div class="bay-desc">Priority scheduling and reporting for the teams that report to you.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay img reveal" id="bay-recovery" data-bay="3" style="background-image:url('assets/images/hero-slide-2.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 32h8l4-8h10l4 6h6" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="14" cy="34" r="3" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="34" r="3" stroke="currentColor" stroke-width="2"/><path d="M28 18l6-6M34 12h4v4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="bay  img reveal" href="service-recovery-towing.html" style="background-image:url('assets/images/hero-slide-2.jpg')">
         <span class="bay-num">04 / RECOVERY</span>
         <div>
           <div class="bay-title">Recovery</div>
           <div class="bay-desc">When something fails on the highway, we respond.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay steel reveal img" id="bay-alignment" data-bay="4" style="background-image:url('assets/images/bay-alignment.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2.2"/><circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="1.8" fill="currentColor"/><path d="M24 8v4M24 36v4M8 24h4M36 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+      </a>
+      <a class="bay steel img reveal" href="service-wheel-alignment.html" style="background-image:url('assets/images/bay-alignment.jpg')">
         <span class="bay-num">05 / ALIGNMENT</span>
         <div>
           <div class="bay-title">Alignment & Balancing</div>
           <div class="bay-desc">Hunter Engineering precision — measured in seconds, felt for months.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay img reveal" id="bay-bodywork" data-bay="5" style="background-image:url('assets/images/bay-bodywork.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 30c2-6 6-10 16-10s14 4 16 10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M10 30h28v4H10v-4z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="15" cy="36" r="2.5" stroke="currentColor" stroke-width="2"/><circle cx="33" cy="36" r="2.5" stroke="currentColor" stroke-width="2"/><path d="M18 20l2-4h8l2 4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="bay  img reveal" href="service-body-paint.html" style="background-image:url('assets/images/bay-bodywork.jpg')">
         <span class="bay-num">06 / BODYWORK</span>
         <div>
           <div class="bay-title">Body & Paint</div>
           <div class="bay-desc">From a parking-lot scrape to full panel work, finished properly.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay orange reveal img" id="bay-detail" data-bay="6" style="background-image:url('assets/images/bay-detail.jpg')">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 28c0-6 4.5-11 10-11s10 5 10 11" stroke="currentColor" stroke-width="2.2"/><path d="M12 28h24v3c0 2-2 4-5 4H17c-3 0-5-2-5-4v-3z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M20 17c1-3 2.5-5 4-5s3 2 4 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 8v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".55"/></svg></div>
+      </a>
+      <a class="bay orange reveal" href="service-detailing.html">
         <span class="bay-num">07 / DETAIL</span>
         <div>
           <div class="bay-title">Wash & Upholstery</div>
           <div class="bay-desc">A clean cabin after a long drive or before a client visit.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay steel reveal" id="bay-tracking" data-bay="7">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2.2"/><circle cx="24" cy="24" r="2" fill="currentColor"/><path d="M24 10v4M24 34v4M10 24h4M34 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 18a6 6 0 0 1 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".7"/></svg></div>
+      </a>
+      <a class="bay steel reveal" href="service-tracking-governors.html">
         <span class="bay-num">08 / TRACKING</span>
         <div>
           <div class="bay-title">Tracking & Governors</div>
           <div class="bay-desc">Installed and supported for commercial compliance.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-      <div class="bay steel reveal" id="bay-more" data-bay="8">
-        <div class="bay-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M26 8L16 26h8l-2 14 12-20h-8l2-12z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a class="bay steel reveal" href="service-electrical-ac.html">
         <span class="bay-num">09 / MORE</span>
         <div>
           <div class="bay-title">Electrical & A/C</div>
           <div class="bay-desc">Comfort and reliability systems kept in order.</div>
+          <div class="bay-arrow">View bay →</div>
         </div>
-      </div>
-    </div>
-
-    <div class="carousel-controls" id="carouselControls" aria-label="Service carousel controls">
-      <button type="button" class="carousel-btn" id="carouselPrev" aria-label="Previous service">‹</button>
-      <div class="carousel-dots" id="carouselDots"></div>
-      <span class="carousel-counter" id="carouselCounter">1 / 9</span>
-      <button type="button" class="carousel-btn" id="carouselNext" aria-label="Next service">›</button>
+      </a>
     </div>
   </div>
 </section>
@@ -273,99 +171,25 @@
   </div>
 </section>
 
-<section class="section split" id="facilities">
-  <div class="wrap">
-    <div class="split-grid">
-      <div class="facility-card reveal">
-        <div class="facility-label">
-          <div class="mono">THE WORKSHOP</div>
-          <h3 class="font-display">Nine bays. Full capability.</h3>
-          <p>Climate-controlled bays, genuine parts, and technicians who treat a company truck with the same care as a weekend drive.</p>
-        </div>
-      </div>
-      <div class="why-card reveal" id="why">
-        <div>
-          <div class="mono">WHY ATLAS</div>
-          <h3 class="font-display">Authorized. Accountable. Convenient.</h3>
-          <p class="why-intro">Built for the executive who signs for the fleet and still drives on weekends — factory standards, one desk, on your route.</p>
 
-          <div class="why-accordion" id="whyAccordion">
-            <div class="why-item open">
-              <button type="button" class="why-trigger" aria-expanded="true">
-                <span>Factory-trained, not guesswork</span>
-                <span class="why-chev">▾</span>
-              </button>
-              <div class="why-panel">
-                <p>Technicians trained to Isuzu standards handle both the company truck and the family SUV. Diagnostics first, then a clear estimate — so you are never surprised when the invoice reaches your desk or your WhatsApp.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <button type="button" class="why-trigger" aria-expanded="false">
-                <span>Genuine parts, transparent quotes</span>
-                <span class="why-chev">▾</span>
-              </button>
-              <div class="why-panel">
-                <p>Original equipment for Isuzu and multi-brand fleets. You see what is going on the vehicle before work starts — useful when procurement or a board question follows.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <button type="button" class="why-trigger" aria-expanded="false">
-                <span>Fleet priority when it matters</span>
-                <span class="why-chev">▾</span>
-              </button>
-              <div class="why-panel">
-                <p>Your transport or operations lead gets a single point of contact, priority scheduling, and reporting that stands up in a Monday meeting. Personal vehicles get the same care without competing for the same bay.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <button type="button" class="why-trigger" aria-expanded="false">
-                <span>On the corridor you already drive</span>
-                <span class="why-chev">▾</span>
-              </button>
-              <div class="why-panel">
-                <p>Exit 7, Thika Road, opposite Garden City. For clients in Runda, Karen, Muthaiga and Ridgeways, service sits on the route — not a CBD detour that costs an hour of the day.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <button type="button" class="why-trigger" aria-expanded="false">
-                <span>One desk for personal and company</span>
-                <span class="why-chev">▾</span>
-              </button>
-              <div class="why-panel">
-                <p>Whether it is a weekend drive after golf or a fleet unit that must be back on the road by Monday, you deal with the same service desk. Quiet competence, no hard sell.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="tel:+254700941698" class="phone-cta">
-          <div>
-            <span class="mono">SERVICE DESK</span>
-            <span class="num">+254 700 941 698</span>
-          </div>
-          <span style="font-size:20px;">→</span>
-        </a>
-      </div>
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2 class="font-display">One desk for personal and company.</h2>
+      <p>Call, WhatsApp or book online — the same service desk answers for the family car and the fleet.</p>
+    </div>
+    <div class="cta-actions">
+      <button type="button" class="btn-solid" data-open-booking>Book Service</button>
+      <a href="tel:+254700941698" class="btn-ghost btn-call">
+        <svg class="call-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 0 2.11-.45c.907.285 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Speak to the desk
+      </a>
     </div>
   </div>
 </section>
 
-<section class="location-band" id="location">
-  <div class="wrap location-band-inner">
-    <div class="location-copy">
-      <div class="eyebrow">The advantage</div>
-      <h2 class="font-display reveal">Opposite Garden City. On the way, not out of the way.</h2>
-      <p class="reveal">Thika Road, Exit 7. For clients in Runda, Karen, Muthaiga, Ridgeways and the northern corridor — service that fits the route you already drive.</p>
-      <div class="location-meta reveal">
-        <span>Exit 7 · Thika Road</span>
-        <span>Opposite Garden City Mall</span>
-        <span>Mon–Sat 8am–6pm · Sun 10am–4pm</span>
-      </div>
-    </div>
-    <div class="location-photo reveal">
-      <img src="assets/images/location-thika-road.jpg" alt="Atlas Auto Service Centre on Thika Road — We are here" width="540" height="540" loading="lazy">
-    </div>
-  </div>
-</section>
 
 
 <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation">
@@ -381,7 +205,8 @@
 
     <div class="overlay-eyebrow">Navigate</div>
     <nav class="overlay-nav" id="overlayNav">
-      <a href="services.html" class="nav-link">Services</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link is-current" aria-current="page">Services</a>
       <button type="button" class="nav-link" id="servicesToggle" aria-expanded="false">
         Service Bays <span class="chev">▾</span>
       </button>

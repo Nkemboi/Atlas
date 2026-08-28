@@ -1,0 +1,186 @@
+/* 13-intro-video.css — extracted from index.html <style> (lines 1645-1829); load order = numeric order */
+  /* ========== INTRO VIDEO MODAL ========== */
+  .video-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .video-modal-content {
+    position: relative;
+    width: min(92vw, 960px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Isuzu + Atlas lockup above the video */
+  .intro-brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 100px;
+  }
+  .intro-isuzu-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+  .intro-isuzu-chip {
+    background: #fff;
+    border-radius: 4px;
+    padding: 7px 13px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  }
+  .intro-isuzu-chip img { height: 14px; display: block; }
+  .intro-authorised-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: rgba(255,255,255,0.6);
+    white-space: nowrap;
+  }
+  .intro-lockup-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.18);
+  }
+  .intro-atlas-logo img { height: 44px; display: block; }
+  @media (max-width: 640px) {
+    .intro-brand-lockup { margin-bottom: 56px; gap: 16px; }
+    .intro-atlas-logo img { height: 34px; }
+  }
+
+  .video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+    background: #000;
+  }
+  #intro-video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  /* Proceed — 50px below the video, centred on the modal, red glass, never wraps */
+  .proceed-btn {
+    position: static;
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    background: rgba(227, 30, 42, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 9999px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(227, 30, 42, 0.4);
+    transition: background .2s ease, box-shadow .2s ease, transform .2s ease, opacity .2s ease;
+    z-index: 10;
+  }
+  .proceed-btn:hover {
+    background: rgba(176, 22, 32, 0.9);
+    box-shadow: 0 10px 30px rgba(227, 30, 42, 0.55);
+    transform: scale(1.04);
+  }
+  .proceed-btn:active {
+    transform: scale(0.97);
+  }
+  .proceed-btn svg {
+    flex-shrink: 0;
+    transition: transform .2s ease;
+  }
+  .proceed-btn:hover svg {
+    transform: translateX(2px);
+  }
+  .proceed-btn[disabled] {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.85;
+  }
+  .proceed-btn[disabled]:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.14);
+  }
+  @media (max-width: 480px) {
+    .proceed-btn { font-size: 12.5px; padding: 10px 15px; gap: 6px; margin-top: 32px; }
+  }
+
+  /* Mute / unmute toggle — bottom left, glass */
+  .mute-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+    z-index: 10;
+  }
+  .mute-btn:hover { background: rgba(255, 255, 255, 0.24); transform: scale(1.06); }
+  .mute-btn svg { width: 19px; height: 19px; }
+  .mute-btn .icon-muted { display: block; }
+  .mute-btn .icon-unmuted { display: none; }
+  .mute-btn.is-unmuted .icon-muted { display: none; }
+  .mute-btn.is-unmuted .icon-unmuted { display: block; }
+  @media (max-width: 480px) {
+    .mute-btn { width: 38px; height: 38px; bottom: 14px; left: 14px; }
+  }
+
+  /* Skip / autoplay progress bar */
+  .intro-progress-track {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.16);
+    z-index: 9;
+  }
+  .intro-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--orange, #E31E2A);
+    transition: width 1s linear;
+  }
+
+  .video-modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+  body.video-modal-open {
+    overflow: hidden;
+  }
+

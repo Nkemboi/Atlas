@@ -1,0 +1,59 @@
+/* 11-trusted-marquee.css — extracted from index.html <style> (lines 1263-1320); load order = numeric order */
+  /* Trusted marquee */
+  .trusted {
+    padding: 64px 0 56px;
+    border-top: 1px solid var(--hair);
+    border-bottom: 1px solid var(--hair);
+    overflow: hidden;
+  }
+  .trusted-head {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 36px;
+  }
+  .trusted-head .eyebrow { margin-bottom: 12px; }
+  .trusted-head h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+  .trusted-head p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .trusted-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .trusted-track {
+    display: flex;
+    width: max-content;
+    gap: 48px;
+    animation: trusted-scroll 40s linear infinite;
+  }
+  .trusted-track:hover { animation-play-state: paused; }
+  @keyframes trusted-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .trusted-item {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    opacity: 0.8;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: opacity .25s, color .25s;
+  }
+  .trusted-item:hover { opacity: 1; color: var(--text); }
+  @media (prefers-reduced-motion: reduce) {
+    .trusted-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+  }
+
+

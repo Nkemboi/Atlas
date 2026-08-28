@@ -1,0 +1,100 @@
+/* 05-nav-overlay.css — extracted from index.html <style> (lines 407-505); load order = numeric order */
+  /* legacy member-link removed — Book Service is in top chrome */
+
+  /* Overlay nav */
+  .nav-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: var(--bg);
+    transform: translateY(100%);
+    transition: transform .55s cubic-bezier(.76, 0, .24, 1);
+    overflow-y: auto;
+  }
+  .nav-overlay.open { transform: translateY(0); }
+  body.menu-open { overflow: hidden; }
+
+  .nav-overlay-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 28px 32px 60px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-overlay-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--hair);
+  }
+  .nav-close {
+    background: none;
+    border: 1px solid var(--hair);
+    color: var(--text);
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color .2s, color .2s;
+  }
+  .nav-close:hover { border-color: var(--orange); color: var(--orange); }
+
+  .overlay-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    color: var(--muted);
+    margin: 48px 0 20px;
+    text-transform: uppercase;
+  }
+  .overlay-nav { display: flex; flex-direction: column; }
+  .nav-link {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(28px, 5vw, 48px);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--hair);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text);
+    background: none;
+    border-left: none; border-right: none; border-top: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: color .2s;
+  }
+  .nav-link:hover { color: var(--orange); }
+  .nav-link .chev { font-size: 16px; color: var(--muted); transition: transform .3s; font-family: 'Inter', sans-serif; }
+  .nav-link.expanded .chev { transform: rotate(180deg); color: var(--orange); }
+
+  .services-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+    background: var(--panel);
+  }
+  .services-submenu.open { max-height: 520px; }
+  .sub-link {
+    display: block;
+    font-size: 15px;
+    color: var(--muted);
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--hair);
+    transition: color .2s, padding-left .2s;
+  }
+  .sub-link:hover { color: var(--orange); padding-left: 28px; }
+
+  .overlay-footer {
+    margin-top: auto;
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .overlay-footer .mono { font-size: 13px; color: var(--muted); }
+  .overlay-socials { display: flex; gap: 20px; font-size: 12px; letter-spacing: 0.08em; color: var(--muted); }
+  .overlay-socials a:hover { color: var(--orange); }
+

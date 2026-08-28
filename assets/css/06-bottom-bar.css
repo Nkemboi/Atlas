@@ -1,0 +1,79 @@
+/* 06-bottom-bar.css — extracted from index.html <style> (lines 506-583); load order = numeric order */
+  /* Bottom bar */
+  .bottom-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 150;
+    background: rgba(10, 13, 18, 0.94);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--hair);
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: transform .35s ease, opacity .35s ease;
+  }
+  .bottom-bar-info { display: flex; flex-direction: column; }
+  .bottom-bar-info .label { font-size: 10px; letter-spacing: 0.16em; color: var(--muted); }
+  .bottom-bar-info .value { font-size: 15px; font-weight: 600; color: var(--text); }
+  .bottom-bar-actions { display: flex; gap: 12px; }
+  .bottom-bar .btn-primary,
+  .bottom-bar .btn-ghost {
+    padding: 13px 22px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+  .btn-primary {
+    background: var(--orange);
+    color: var(--white);
+    padding: 16px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    transition: background .2s, box-shadow .2s;
+  }
+  .btn-primary:hover {
+    background: var(--orange-dark);
+    box-shadow: 0 0 20px var(--orange-glow);
+  }
+  @media (max-width: 640px) {
+    .bottom-bar {
+      transform: translateY(110%);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .bottom-bar.is-visible {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .bottom-bar-info { display: none; }
+    .bottom-bar {
+      padding: 12px 14px;
+      padding-bottom: max(12px, env(safe-area-inset-bottom));
+    }
+    .bottom-bar-actions {
+      width: 100%;
+      gap: 8px;
+    }
+    .bottom-bar-actions a,
+    .bottom-bar-actions button {
+      flex: 1;
+      min-width: 0;
+      padding: 12px 10px;
+      font-size: 12px;
+    }
+    .bottom-bar-actions .btn-icon {
+      width: 15px;
+      height: 15px;
+    }
+    .brand-lockup img.atlas { height: 28px; }
+    .brand-lockup img.isuzu { height: 12px; }
+    .book-service-btn {
+      padding: 10px 14px;
+      font-size: 12px;
+      gap: 8px;
+    }
+    .book-service-btn .spanner { width: 16px; height: 16px; }
+  }
+

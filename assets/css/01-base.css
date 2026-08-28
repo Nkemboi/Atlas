@@ -1,0 +1,41 @@
+/* 01-base.css — extracted from index.html <style> (lines 11-50); load order = numeric order */
+  :root {
+    /* Light page theme */
+    --bg: #F5F3EE;
+    --panel: #FFFFFF;
+    --panel-2: #EFECE6;
+    --steel: #E5E1DA;
+    --orange: #E31E2A;
+    --orange-dark: #B01620;
+    --orange-glow: rgba(227, 30, 42, 0.28);
+    --text: #1A1D24;
+    --muted: #5C6570;
+    --hair: rgba(26, 29, 36, 0.10);
+    --white: #FFFFFF;
+    /* Dark surfaces (hero / header / brand strength) */
+    --dark-bg: #0A0D12;
+    --dark-panel: #12161D;
+    --dark-text: #F2F0EA;
+    --dark-muted: #9AA3B0;
+    --dark-hair: rgba(242, 240, 234, 0.10);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    padding-bottom: 78px;
+  }
+  .font-display { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; letter-spacing: -0.02em; line-height: 1.15; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+  ::selection { background: var(--orange); color: #fff; }
+
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+

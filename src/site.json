@@ -1,0 +1,28 @@
+{
+  "siteName": "Atlas Auto Service Centre",
+  "tagline": "Isuzu Authorized · Nairobi",
+  "phoneDisplay": "+254 700 941 698",
+  "phoneHref": "tel:+254700941698",
+  "email": "info@atlas-servicecentre.co.ke",
+  "addressShort": "Thika Rd, opposite Garden City",
+  "addressLong": "Thika Road, Exit 7 · opposite Garden City Mall, Nairobi",
+  "hours": [
+    { "days": "Mon–Sat", "time": "8am–6pm" },
+    { "days": "Sun", "time": "10am–4pm" }
+  ],
+  "instagramUrl": "https://www.instagram.com/atlasautoservicecentre?igsh=d3gzMjNuNHJydnVx",
+  "instagramHandle": "atlasautoservicecentre",
+  "mapsUrl": "https://maps.app.goo.gl/3VVAVvx3FgYUzrfz8",
+  "introVideoEmbed": "https://www.youtube-nocookie.com/embed/eX8DE-_GJDM?autoplay=1&loop=1&playlist=eX8DE-_GJDM&start=4&controls=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1",
+  "osmEmbed": "https://www.openstreetmap.org/export/embed.html?bbox=36.8700%2C-1.2350%2C36.8950%2C-1.2150&amp;layer=mapnik&amp;marker=-1.2250%2C36.8825",
+  "nav": [
+    { "key": "services", "label": "Services", "href": "services.html" },
+    { "key": "bays", "label": "Service Bays", "submenu": true },
+    { "key": "workshop", "label": "The Workshop", "href": "workshop.html" },
+    { "key": "why", "label": "Why Atlas", "href": "why-atlas.html" },
+    { "key": "location", "label": "Location", "href": "location.html" },
+    { "key": "contact", "label": "Contact", "href": "contact.html" }
+  ],
+  "areasServed": ["Runda", "Karen", "Muthaiga", "Ridgeways", "Kasarani", "Thika Road corridor"],
+  "copyright": "© 2026 Atlas Auto Service Centre. All rights reserved."
+}
