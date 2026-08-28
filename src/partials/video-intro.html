@@ -14,7 +14,7 @@
     <div class="video-frame">
       <iframe
         id="intro-video"
-        src="https://www.youtube-nocookie.com/embed/eX8DE-_GJDM?autoplay=1&loop=1&playlist=eX8DE-_GJDM&start=4&controls=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
+        src="{{INTRO_VIDEO}}"
         title="Atlas Intro Video"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -22,7 +22,8 @@
         referrerpolicy="strict-origin-when-cross-origin">
       </iframe>
 
-      <button id="mute-btn" class="mute-btn is-unmuted" type="button" aria-label="Mute video" aria-pressed="true">
+      <!-- Starts muted: browsers only allow autoplay for muted media. The toggle unmutes on demand. -->
+      <button id="mute-btn" class="mute-btn" type="button" aria-label="Unmute video" aria-pressed="false">
         <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
           <line x1="23" y1="9" x2="17" y2="15"/>

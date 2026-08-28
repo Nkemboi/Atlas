@@ -23,6 +23,7 @@ Garden City Mall, Nairobi). Built from the original single-file `index.html`
 | Service bays | `service-mechanical-diagnostics.html`, `service-genuine-parts.html`, `service-fleet-management.html`, `service-recovery-towing.html`, `service-wheel-alignment.html`, `service-body-paint.html`, `service-detailing.html`, `service-tracking-governors.html`, `service-electrical-ac.html` |
 | The Workshop | `workshop.html` |
 | Why Atlas | `why-atlas.html` |
+| About Us (team & careers) | `about.html` |
 | Location | `location.html` |
 | Contact | `contact.html` |
 
