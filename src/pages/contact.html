@@ -1,0 +1,137 @@
+<header class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('{{ROOT}}assets/images/hero-slide-1.jpg')"></div>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ROOT}}index.html">Home</a><span class="sep">/</span>
+      <span class="current">Contact</span>
+    </nav>
+    <div class="eyebrow">Contact</div>
+    <h1 class="font-display">One desk for personal and company.</h1>
+    <p class="page-lead">Call, write, or send the booking form — the same service desk answers for the family car and the fleet.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="ic-label">Service desk</div>
+        <div class="ic-value"><a href="{{PHONE_HREF}}">{{PHONE}}</a></div>
+        <div class="ic-sub">Call or WhatsApp — a person answers in business hours</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-label">Email</div>
+        <div class="ic-value"><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></div>
+        <div class="ic-sub">Bookings, quotes, fleet accounts and paperwork</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-label">Visit</div>
+        <div class="ic-value">Thika Road, Exit 7</div>
+        <div class="ic-sub">Opposite Garden City Mall, Nairobi · <a href="{{ROOT}}location.html">directions</a></div>
+      </div>
+      <div class="info-card">
+        <div class="ic-label">Hours</div>
+        <div class="ic-value">Mon–Sat · 8am–6pm</div>
+        <div class="ic-sub">Sun · 10am–4pm</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band-panel" id="book-service">
+  <div class="wrap">
+    <div class="left-head">
+      <div class="eyebrow">Book a service</div>
+      <h2 class="section-title font-display">Tell us about the vehicle.</h2>
+      <p class="section-lead">A coordinator will confirm within the hour during business hours.</p>
+    </div>
+    <div class="inline-booking">
+      <form class="booking-form" id="contactBookingForm" data-inline-booking>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="ctName">Full name</label>
+            <input type="text" id="ctName" name="name" required placeholder="As on your ID" autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="ctPhone">Mobile</label>
+            <input type="tel" id="ctPhone" name="phone" required placeholder="+254 7…" autocomplete="tel">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="ctEmail">Email <span style="opacity:.6">(optional)</span></label>
+          <input type="email" id="ctEmail" name="email" placeholder="you@company.com" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="ctVehicle">Vehicle</label>
+            <input type="text" id="ctVehicle" name="vehicle" required placeholder="e.g. Isuzu D-Max 2022">
+          </div>
+          <div class="form-field">
+            <label for="ctPlate">Number plate</label>
+            <input type="text" id="ctPlate" name="plate" placeholder="KAA 123A">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="ctService">Service needed</label>
+          <select id="ctService" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="diagnostics">Diagnostics & Mechanical</option>
+            <option value="parts">Genuine Parts</option>
+            <option value="fleet">Fleet Support</option>
+            <option value="recovery">Recovery / Towing</option>
+            <option value="alignment">Alignment & Balancing</option>
+            <option value="body">Body & Paint</option>
+            <option value="detail">Wash & Upholstery</option>
+            <option value="tracking">Tracking & Governors</option>
+            <option value="electrical">Electrical & A/C</option>
+            <option value="other">Other / Not sure</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="ctWhen">Preferred date</label>
+            <input type="date" id="ctWhen" name="date">
+          </div>
+          <div class="form-field">
+            <label for="ctType">Booking type</label>
+            <select id="ctType" name="type">
+              <option value="personal">Personal vehicle</option>
+              <option value="fleet">Company / fleet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="ctNotes">Anything we should know?</label>
+          <textarea id="ctNotes" name="notes" placeholder="Symptoms, urgency, fleet account reference…"></textarea>
+        </div>
+        <button type="submit" class="booking-submit">Request appointment</button>
+        <p class="booking-privacy">Opposite Garden City · Thika Road Exit 7<br>We only use this to confirm your booking.</p>
+      </form>
+      <div class="inline-success" id="contactBookingSuccess">
+        <div class="booking-success-icon">✓</div>
+        <h3>Request received</h3>
+        <p>Thank you. Our service desk will call or WhatsApp you shortly to confirm the slot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split-2">
+      <div>
+        <div class="left-head">
+          <div class="eyebrow">Follow along</div>
+          <h2 class="section-title font-display">The workshop, on camera.</h2>
+          <p class="section-lead">Bay work, handovers and the occasional before-and-after — {{INSTAGRAM_HANDLE}} on Instagram.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn-solid" href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">@{{INSTAGRAM_HANDLE}}</a>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe title="Atlas Auto Service Centre location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="{{OSM_EMBED}}"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

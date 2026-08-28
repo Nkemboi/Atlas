@@ -1,0 +1,325 @@
+/* 12-theme-overrides.css — extracted from index.html <style> (lines 1321-1644); load order = numeric order */
+  /* Hero stays dark */
+  .hero {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  .hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(10,13,18,0.55) 0%, rgba(10,13,18,0.3) 38%, rgba(10,13,18,0.88) 100%),
+      radial-gradient(ellipse at center, transparent 28%, rgba(10,13,18,0.55) 100%);
+  }
+  .hero h1 { color: var(--dark-text); }
+  .hero-sub { color: var(--dark-muted); }
+  .hero-usp {
+    color: var(--dark-text);
+    border-color: var(--dark-hair);
+    background: rgba(10,13,18,0.45);
+  }
+  .hero-usp .usp-hint { color: var(--dark-muted); }
+  .hero .btn-ghost {
+    border-color: var(--dark-hair);
+    color: var(--dark-text);
+  }
+
+  /* Brand strength — keep black */
+  .trusted {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+    border-top: none;
+    border-bottom: none;
+  }
+  .trusted-head .eyebrow { color: var(--orange); }
+  .trusted-head h2 { color: var(--dark-text); }
+  .trusted-head p { color: var(--dark-muted); }
+  .trusted-item {
+    color: var(--dark-muted);
+  }
+  .trusted-item:hover { color: var(--dark-text); }
+
+  .bottom-bar {
+    background: rgba(10, 13, 18, 0.96);
+    border-top-color: var(--dark-hair);
+    color: var(--dark-text);
+  }
+  .bottom-bar-info .label { color: var(--dark-muted); }
+  .bottom-bar-info .value { color: var(--dark-text); }
+
+  .nav-overlay {
+    background: rgba(7, 9, 12, 0.96);
+    color: var(--dark-text);
+  }
+
+  .why-card {
+    background: var(--dark-panel);
+    color: var(--dark-text);
+  }
+  .why-card .mono { color: rgba(255,255,255,0.7); }
+  .why-card h3 { color: var(--dark-text); }
+  .why-card p, .why-intro { color: rgba(255,255,255,0.85); }
+  .why-trigger { color: var(--dark-text); }
+  .why-panel p { color: rgba(255,255,255,0.8); }
+  .why-accordion { border-top-color: rgba(255,255,255,0.2); }
+  .why-item { border-bottom-color: rgba(255,255,255,0.2); }
+  .phone-cta {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  .phone-cta .mono { color: var(--dark-muted); }
+
+  footer {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  .footer-brand p { color: var(--dark-muted); }
+  footer a { color: var(--dark-muted); }
+  footer a:hover { color: var(--dark-text); }
+
+  .bay {
+    background: var(--panel);
+    border-color: var(--hair);
+    color: var(--text);
+    box-shadow: 0 1px 3px rgba(26,29,36,0.04);
+  }
+  .bay:hover {
+    border-color: var(--orange);
+    box-shadow: 0 8px 24px rgba(26,29,36,0.08);
+  }
+  .bay-num { color: var(--muted); }
+  .bay-title { color: var(--text); }
+  .bay-desc { color: var(--muted); }
+  .bay.orange { background: var(--orange); color: var(--white); }
+  .bay.orange .bay-num,
+  .bay.orange .bay-desc { color: rgba(255,255,255,0.8); }
+  .bay.steel {
+    background: #2A3340;
+    color: var(--dark-text);
+  }
+  .bay.steel .bay-num,
+  .bay.steel .bay-desc { color: var(--dark-muted); }
+  .bay.img .bay-title { color: #fff; }
+  .bay.img .bay-num,
+  .bay.img .bay-desc { color: rgba(255,255,255,0.8); }
+
+  .booking-overlay, .map-overlay {
+    background: rgba(7, 9, 12, 0.65);
+  }
+  .booking-panel, .map-panel {
+    background: var(--panel);
+    border-color: var(--hair);
+    color: var(--text);
+  }
+  .booking-panel h2, .map-header h3 { color: var(--text); }
+  .booking-lead, .map-header p { color: var(--muted); }
+  .form-field input, .form-field select, .form-field textarea {
+    background: var(--bg);
+    border-color: var(--hair);
+    color: var(--text);
+  }
+
+  .section { background: var(--bg); }
+  .section-title { color: var(--text); }
+  .section-lead { color: var(--muted); }
+  .eyebrow { color: var(--orange); }
+  .split { background: var(--panel-2); }
+  .location-band {
+    background: var(--panel);
+    border-top-color: var(--hair);
+  }
+  .location-band h2 { color: var(--text); }
+  .location-band p { color: var(--muted); }
+  .location-meta span { color: var(--text); }
+  .services-select-wrap select,
+  #service-select {
+    background: var(--panel);
+    border-color: var(--hair);
+    color: var(--text);
+  }
+  .carousel-btn {
+    background: var(--panel);
+    border-color: var(--hair);
+    color: var(--text);
+  }
+
+
+  /* Capabilities images — readable framing */
+  .bay.img {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+  .bay.large.img {
+    background-position: center 35% !important;
+  }
+  .bay.img::before {
+    background: linear-gradient(180deg, rgba(10,13,18,0.15) 0%, rgba(10,13,18,0.75) 100%) !important;
+  }
+
+
+  .why-item.open .why-trigger {
+    color: var(--orange);
+  }
+  .why-item.open {
+    border-bottom-color: rgba(227, 30, 42, 0.45);
+  }
+  .why-item.open .why-chev {
+    color: var(--orange);
+  }
+  .why-trigger {
+    transition: color .2s ease;
+  }
+
+
+  .trusted-isuzu {
+    display: block;
+    height: 28px;
+    width: auto;
+    margin: 0 auto 18px;
+    object-fit: contain;
+  }
+  .location-band-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .location-copy { text-align: left; }
+  .location-band .location-copy .section-title,
+  .location-band .location-copy h2 { text-align: left; }
+  .location-band .location-copy .eyebrow { text-align: left; }
+  .location-band .location-copy p { margin-left: 0; margin-right: 0; max-width: 420px; }
+  .location-meta { justify-content: flex-start; }
+  .location-photo {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--hair);
+    box-shadow: 0 12px 40px rgba(26,29,36,0.12);
+  }
+  .location-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  @media (max-width: 760px) {
+    .location-band-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .location-copy { text-align: center; }
+    .location-band .location-copy .eyebrow,
+    .location-band .location-copy h2 { text-align: center; }
+    .location-band .location-copy p { margin: 0 auto 28px; }
+    .location-meta { justify-content: center; }
+  }
+  /* Instagram bottom CTA */
+  .bottom-bar .btn-come-over {
+    text-decoration: none;
+  }
+
+
+  /* Explore menu — always dark (readable on mobile) */
+  .nav-overlay {
+    background: #0A0D12 !important;
+    color: #F2F0EA !important;
+  }
+  .nav-overlay .nav-link {
+    color: #F2F0EA !important;
+    border-bottom-color: rgba(242,240,234,0.12) !important;
+  }
+  .nav-overlay .nav-link:hover { color: #E31E2A !important; }
+  .nav-overlay .nav-link .chev { color: #9AA3B0 !important; }
+  .nav-overlay .nav-link.expanded .chev { color: #E31E2A !important; }
+  .nav-overlay .nav-close {
+    color: #F2F0EA !important;
+    border-color: rgba(242,240,234,0.15) !important;
+  }
+  .nav-overlay .nav-close:hover {
+    color: #E31E2A !important;
+    border-color: #E31E2A !important;
+  }
+  .nav-overlay .overlay-eyebrow { color: #9AA3B0 !important; }
+  .nav-overlay .overlay-footer .mono { color: #9AA3B0 !important; }
+  .nav-overlay .nav-overlay-top { border-bottom-color: rgba(242,240,234,0.12) !important; }
+  .nav-overlay .services-submenu a {
+    color: #9AA3B0 !important;
+  }
+  .nav-overlay .services-submenu a:hover { color: #E31E2A !important; }
+  .nav-overlay .brand-lockup img { opacity: 1; }
+
+  .facility-label h3 { color: #FFFFFF !important; }
+  .facility-label p { color: rgba(255,255,255,0.8) !important; }
+
+  .hero-usp {
+    color: #F2F0EA !important;
+    border-color: rgba(255,255,255,0.25) !important;
+    background: rgba(10,13,18,0.45) !important;
+  }
+  .hero-usp .usp-label { color: #F2F0EA !important; }
+  .hero-usp .pin-icon { color: #E31E2A !important; }
+  .map-overlay {
+    z-index: 320 !important;
+  }
+  .map-overlay.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+
+  .bottom-bar .btn-come-over {
+    gap: 4px !important;
+  }
+  .bottom-bar .btn-come-over .btn-icon {
+    margin: 0 !important;
+  }
+  .bottom-bar .btn-come-over span {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* Header lockup: Atlas then Isuzu + AUTHORIZED */
+  .top-chrome {
+    align-items: center !important;
+  }
+  .brand-lockup {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+  .brand-lockup img.isuzu {
+    height: 16px !important;
+    display: block !important;
+  }
+  .brand-lockup img.atlas {
+    height: 41px !important;
+    display: block !important;
+  }
+  .brand-isuzu-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+  .brand-isuzu-stack .authorized-label {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: rgba(242, 240, 234, 0.85);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .book-service-btn {
+    align-self: center !important;
+    margin-top: 0 !important;
+  }
+  @media (max-width: 640px) {
+    .brand-lockup img.atlas { height: 32px !important; }
+    .brand-lockup img.isuzu { height: 14px !important; }
+    .brand-isuzu-stack .authorized-label {
+      font-size: 7px;
+      letter-spacing: 0.14em;
+    }
+  }
+
+

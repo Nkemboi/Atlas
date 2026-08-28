@@ -1,0 +1,228 @@
+{
+  "services": [
+    {
+      "slug": "mechanical-diagnostics",
+      "navTitle": "Mechanical & Diagnostics",
+      "bayTitle": "Diagnostics & Mechanical",
+      "num": "01",
+      "tag": "01 / MECHANICAL",
+      "bookingValue": "diagnostics",
+      "cardClass": "large",
+      "image": "hero-slide-1.jpg",
+      "inNav": true,
+      "excerpt": "Full computer diagnosis for passenger and commercial vehicles. No guesswork.",
+      "intro": "Every job starts with the computer, not the guess. Factory-grade diagnostics read what the vehicle is actually doing — then a technician confirms it on the ramp before anything is quoted.",
+      "includes": [
+        "Full-system computer diagnostics for passenger and commercial vehicles",
+        "Engine, transmission and driveline mechanical work",
+        "Scheduled servicing to manufacturer intervals",
+        "Pre-purchase and pre-trip inspections",
+        "Fault tracing that ends in a written finding, not a shrug"
+      ],
+      "faq": [
+        { "q": "Do you work on brands other than Isuzu?", "a": "Yes. Isuzu is our authorised marque, but the bays serve multi-brand passenger and commercial vehicles every day." },
+        { "q": "Will I get an estimate before work starts?", "a": "Always. Diagnostics first, then a clear written estimate — by call or WhatsApp — before any work begins." },
+        { "q": "How long does a diagnostic take?", "a": "Most readings and inspections are same-day; the service desk gives you a realistic window when you book." }
+      ]
+    },
+    {
+      "slug": "genuine-parts",
+      "navTitle": "Genuine Parts",
+      "bayTitle": "Genuine Parts",
+      "num": "02",
+      "tag": "02 / PARTS",
+      "bookingValue": "parts",
+      "cardClass": "orange",
+      "image": "bay-parts.jpg",
+      "inNav": true,
+      "excerpt": "Original equipment for Isuzu and multi-brand fleets.",
+      "intro": "The right part, not the nearest part. Genuine and OEM-spec components for Isuzu and multi-brand fleets, ordered against your VIN so what fits on paper fits on the vehicle.",
+      "includes": [
+        "Genuine Isuzu parts and OEM-equivalent components",
+        "VIN-based ordering to remove fitment guesswork",
+        "Fleet parts planning for scheduled maintenance",
+        "Warranty-respecting replacements",
+        "Parts staged against your booking so the bay never waits"
+      ],
+      "faq": [
+        { "q": "Can you source parts for older models?", "a": "In most cases, yes. The desk confirms availability against your VIN before you commit to anything." },
+        { "q": "Do you fit parts I bring in?", "a": "We prefer to supply and warrant what we fit. For client-supplied parts we will quote labour separately and flag any fitment risk in writing first." }
+      ]
+    },
+    {
+      "slug": "fleet-management",
+      "navTitle": "Fleet Management Support",
+      "bayTitle": "Fleet Support",
+      "num": "03",
+      "tag": "03 / FLEET",
+      "bookingValue": "fleet",
+      "cardClass": "steel",
+      "image": "bay-fleet.jpg",
+      "inNav": true,
+      "excerpt": "Priority scheduling and reporting for the teams that report to you.",
+      "intro": "A fleet is a promise to someone else's schedule. You get a single point of contact, priority bays, and reporting that reads well in a Monday meeting.",
+      "includes": [
+        "One point of contact for your transport or operations lead",
+        "Priority scheduling and agreed turnaround windows",
+        "Per-unit service history and condition reporting",
+        "Consolidated invoicing and maintenance planning",
+        "Staff personal vehicles handled to the same standard"
+      ],
+      "faq": [
+        { "q": "How do we start a fleet account?", "a": "Call the desk and ask for the fleet coordinator. You will agree contact points, scheduling and reporting format before the first unit is booked." },
+        { "q": "Can personal and company vehicles share one account?", "a": "Yes — one desk for both. Company units keep fleet reporting; personal vehicles are simply looked after on the side." }
+      ]
+    },
+    {
+      "slug": "recovery-towing",
+      "navTitle": "Recovery & Towing",
+      "bayTitle": "Recovery",
+      "num": "04",
+      "tag": "04 / RECOVERY",
+      "bookingValue": "recovery",
+      "cardClass": "",
+      "image": "hero-slide-2.jpg",
+      "inNav": true,
+      "excerpt": "When something fails on the highway, we respond.",
+      "intro": "Breakdowns don't book appointments. Call the desk and we coordinate recovery to the workshop on Thika Road — the diagnosis is already waiting when the vehicle arrives.",
+      "includes": [
+        "Roadside response coordination on the Thika Road corridor",
+        "Recovery to the workshop with diagnosis on arrival",
+        "Priority re-entry to a bay once recovered",
+        "Fleet incident logging for insurance and reporting",
+        "Clear communication from call-out to handover"
+      ],
+      "faq": [
+        { "q": "What number do I call in a breakdown?", "a": "The service desk on +254 700 941 698. Give us your location and the vehicle, and we coordinate from there." },
+        { "q": "Do you recover vehicles you didn't service?", "a": "Yes. Recovery is coordinated for any vehicle, and the workshop then gives you the same diagnostics-first estimate as a regular booking." }
+      ]
+    },
+    {
+      "slug": "wheel-alignment",
+      "navTitle": "Wheel Alignment",
+      "bayTitle": "Alignment & Balancing",
+      "num": "05",
+      "tag": "05 / ALIGNMENT",
+      "bookingValue": "alignment",
+      "cardClass": "steel",
+      "image": "bay-alignment.jpg",
+      "inNav": true,
+      "excerpt": "Hunter Engineering precision — measured in seconds, felt for months.",
+      "intro": "Alignment is where tyre money is saved or burned. Precision measurement and correction that stops the pull, ends the uneven wear, and keeps the steering where you left it.",
+      "includes": [
+        "Computerised four-wheel alignment",
+        "Wheel balancing and tyre rotation",
+        "Suspension and steering condition checks",
+        "Post-impact checks after potholes or kerb strikes",
+        "Before-and-after settings printout"
+      ],
+      "faq": [
+        { "q": "How often should alignment be checked?", "a": "At least once a year, and after any significant impact — potholes on the corridor count. Uneven tyre wear or a pull is a check-now symptom." },
+        { "q": "Does alignment include balancing?", "a": "We quote them together when both are due; balancing alone is a quick job and can be done while you wait." }
+      ]
+    },
+    {
+      "slug": "body-paint",
+      "navTitle": "Body & Paint",
+      "bayTitle": "Body & Paint",
+      "num": "06",
+      "tag": "06 / BODYWORK",
+      "bookingValue": "body",
+      "cardClass": "",
+      "image": "bay-bodywork.jpg",
+      "inNav": true,
+      "excerpt": "From a parking-lot scrape to full panel work, finished properly.",
+      "intro": "Panel work is visible work. From door dings to full resprays, the finish is colour-matched, blended and cleared so the repair disappears.",
+      "includes": [
+        "Scratch, dent and panel repair",
+        "Colour matching and blending",
+        "Full and partial resprays",
+        "Insurance assessment support",
+        "Trim and seal restoration to factory lines"
+      ],
+      "faq": [
+        { "q": "Do you deal with insurance assessments?", "a": "Yes. We support the assessment process and document the repair the way insurers expect." },
+        { "q": "How long does panel work take?", "a": "It depends on the damage and paint cure times. You get a written timeline with the estimate, and a call if anything changes." }
+      ]
+    },
+    {
+      "slug": "detailing",
+      "navTitle": "Detailing",
+      "bayTitle": "Wash & Upholstery",
+      "num": "07",
+      "tag": "07 / DETAIL",
+      "bookingValue": "detail",
+      "cardClass": "orange",
+      "image": null,
+      "inNav": true,
+      "excerpt": "A clean cabin after a long drive or before a client visit.",
+      "intro": "The cabin is where your clients sit. Deep wash, interior detailing and upholstery care that make a five-year-old vehicle present like a new one.",
+      "includes": [
+        "Exterior hand wash and protected finish",
+        "Interior deep clean and vacuum",
+        "Upholstery and carpet shampooing",
+        "Engine bay dressing on request",
+        "Pre-event and pre-sale presentation details"
+      ],
+      "faq": [
+        { "q": "Can detailing remove stains and odours?", "a": "Most stains and odours, yes. Stubborn cases are assessed first and we tell you honestly what is achievable before you pay for it." },
+        { "q": "How long should I allow?", "a": "A full interior detail is typically a half-day job; the desk confirms a collection time when you book." }
+      ]
+    },
+    {
+      "slug": "tracking-governors",
+      "navTitle": "Tracking & Governors",
+      "bayTitle": "Tracking & Governors",
+      "num": "08",
+      "tag": "08 / TRACKING",
+      "bookingValue": "tracking",
+      "cardClass": "steel",
+      "image": null,
+      "inNav": true,
+      "excerpt": "Installed and supported for commercial compliance.",
+      "intro": "Compliance shouldn't ground the fleet. Speed governors and tracking devices installed, calibrated and supported — with the paperwork your operations file expects.",
+      "includes": [
+        "Speed governor supply, installation and calibration",
+        "GPS tracking device installation",
+        "Compliance certification support",
+        "Fault finding on existing units",
+        "Fleet-wide installation scheduling"
+      ],
+      "faq": [
+        { "q": "Can you calibrate governors installed elsewhere?", "a": "Yes, existing units can be tested and calibrated; if a unit is beyond calibration we say so and quote the replacement plainly." },
+        { "q": "Do you schedule installations around fleet uptime?", "a": "That is the point of the bay — installations are planned in batches around your operating hours, not against them." }
+      ]
+    },
+    {
+      "slug": "electrical-ac",
+      "navTitle": "Electrical & A/C",
+      "bayTitle": "Electrical & A/C",
+      "num": "09",
+      "tag": "09 / MORE",
+      "bookingValue": "electrical",
+      "cardClass": "steel",
+      "image": null,
+      "inNav": false,
+      "excerpt": "Comfort and reliability systems kept in order.",
+      "intro": "The systems you only notice when they fail. Wiring, charging, starting and air conditioning diagnosed and repaired before they become a roadside story.",
+      "includes": [
+        "Air conditioning service, regas and leak tracing",
+        "Battery, alternator and starter diagnosis",
+        "Wiring fault finding and repair",
+        "Lighting and accessory installation",
+        "Climate system checks before long routes"
+      ],
+      "faq": [
+        { "q": "My A/C is weak — is it always a regas?", "a": "No. Weak cooling can be gas, a leak, the compressor or a blend door. We trace the actual fault before recommending anything." },
+        { "q": "Do you trace intermittent electrical faults?", "a": "Yes — intermittent faults are diagnosed methodically with the meter and the wiring diagram, not by swapping parts until it stops." }
+      ]
+    }
+  ],
+  "processSteps": [
+    { "title": "Book the desk", "text": "Call, WhatsApp or the booking form. You get a slot and a named contact — not a queue." },
+    { "title": "Diagnose & inspect", "text": "Computer diagnostics first, then a physical inspection on the ramp. Findings before opinions." },
+    { "title": "Written estimate", "text": "A clear quote by call or WhatsApp. Nothing is touched until you approve it." },
+    { "title": "Work & quality check", "text": "The bay completes the work to factory standards, then checks it before handover." },
+    { "title": "Handover & history", "text": "You collect the vehicle with a record of what was done — useful for the next service, the resale, or the board." }
+  ]
+}

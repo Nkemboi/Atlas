@@ -1,0 +1,82 @@
+/* 02-chrome.css — extracted from index.html <style> (lines 51-131); load order = numeric order */
+  /* Top chrome */
+  .top-chrome {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 20px 12px;
+    pointer-events: none;
+    background: transparent;
+    transition: background .35s ease, backdrop-filter .35s ease, border-color .35s ease, padding .35s ease;
+    border-bottom: 1px solid transparent;
+  }
+  .top-chrome.is-scrolled {
+    background: rgba(10, 13, 18, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom-color: rgba(255,255,255,0.08);
+    pointer-events: auto;
+  }
+  .top-chrome > * { pointer-events: auto; }
+
+  .brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin-left: -10px;
+  }
+  .brand-lockup img.isuzu { height: 14px; display: block; }
+  .brand-lockup img.atlas { height: 36px; display: block; }
+  .brand-divider { display: none; }
+  .partner-label { display: none; }
+  .location-pill { display: none; }
+
+  /* Book Service — top right with rotating spanner */
+  .book-service-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--orange);
+    color: var(--white);
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s, box-shadow .2s, transform .2s;
+    box-shadow: 0 4px 20px rgba(227, 30, 42, 0.35);
+    text-decoration: none;
+    margin-top: -10px;
+    margin-right: -5px;
+  }
+  .book-service-btn:hover {
+    background: var(--orange-dark);
+    box-shadow: 0 6px 28px rgba(227, 30, 42, 0.45);
+    transform: translateY(-1px);
+  }
+  .book-service-btn .spanner {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    animation: spanner-rotate 4s linear infinite;
+  }
+  .book-service-btn:hover .spanner {
+    animation-duration: 1.2s;
+  }
+  @keyframes spanner-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .book-service-btn .spanner { animation: none; }
+  }
+

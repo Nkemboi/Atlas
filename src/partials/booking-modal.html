@@ -1,0 +1,79 @@
+<!-- Booking form overlay -->
+<div class="booking-overlay" id="bookingOverlay" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+  <div class="booking-panel">
+    <button type="button" class="booking-close" id="bookingClose" aria-label="Close">×</button>
+    <div class="booking-eyebrow">Service desk</div>
+    <h2 id="bookingTitle">Book a service</h2>
+    <p class="booking-lead">Tell us about the vehicle and when you need us. A coordinator will confirm within the hour during business hours.</p>
+
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="bkName">Full name</label>
+          <input type="text" id="bkName" name="name" required placeholder="As on your ID" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="bkPhone">Mobile</label>
+          <input type="tel" id="bkPhone" name="phone" required placeholder="+254 7…" autocomplete="tel">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="bkEmail">Email <span style="opacity:.6">(optional)</span></label>
+        <input type="email" id="bkEmail" name="email" placeholder="you@company.com" autocomplete="email">
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="bkVehicle">Vehicle</label>
+          <input type="text" id="bkVehicle" name="vehicle" required placeholder="e.g. Isuzu D-Max 2022">
+        </div>
+        <div class="form-field">
+          <label for="bkPlate">Number plate</label>
+          <input type="text" id="bkPlate" name="plate" placeholder="KAA 123A">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="bkService">Service needed</label>
+        <select id="bkService" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="diagnostics">Diagnostics & Mechanical</option>
+          <option value="parts">Genuine Parts</option>
+          <option value="fleet">Fleet Support</option>
+          <option value="recovery">Recovery / Towing</option>
+          <option value="alignment">Alignment & Balancing</option>
+          <option value="body">Body & Paint</option>
+          <option value="detail">Wash & Upholstery</option>
+          <option value="tracking">Tracking & Governors</option>
+          <option value="electrical">Electrical & A/C</option>
+          <option value="other">Other / Not sure</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="bkWhen">Preferred date</label>
+          <input type="date" id="bkWhen" name="date">
+        </div>
+        <div class="form-field">
+          <label for="bkType">Booking type</label>
+          <select id="bkType" name="type">
+            <option value="personal">Personal vehicle</option>
+            <option value="fleet">Company / fleet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="bkNotes">Anything we should know?</label>
+        <textarea id="bkNotes" name="notes" placeholder="Symptoms, urgency, fleet account reference…"></textarea>
+      </div>
+      <button type="submit" class="booking-submit">Request appointment</button>
+      <p class="booking-privacy">Opposite Garden City · Thika Road Exit 7<br>We only use this to confirm your booking.</p>
+    </form>
+
+    <div class="booking-success" id="bookingSuccess">
+      <div class="booking-success-icon">✓</div>
+      <h3>Request received</h3>
+      <p>Thank you. Our service desk will call or WhatsApp you shortly to confirm the slot.</p>
+      <button type="button" class="booking-submit" id="bookingDone" style="margin-top:20px;">Close</button>
+    </div>
+  </div>
+</div>
+
